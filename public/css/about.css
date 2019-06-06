@@ -71,3 +71,28 @@
     text-decoration: none;
     color: white;
 }
+
+
+/* MEDIA FOR < 1200  */
+
+@media (max-width: 768px) {
+    .info {
+        display: none;
+    }
+    .img-about {
+        text-align: center;
+    }
+    .img-about img {
+        width: 60vw;
+    }
+    .text-intro-about {
+        margin: 0;
+        text-align: center;
+    }
+    .link-quote {
+        margin-bottom: 40px;
+    }
+    .mission-about h1 {
+        text-align: center;
+    }
+}

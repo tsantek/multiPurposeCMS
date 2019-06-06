@@ -19,6 +19,18 @@ app.get('/about', (req, res) => {
     res.render('pages/about')
 })
 
+app.get('/projects', (req, res) => {
+    res.render('pages/projects')
+})
+
+app.get('/services', (req, res) => {
+    res.render('pages/services')
+})
+
+app.get('/contact', (req, res) => {
+    res.render('pages/contact')
+})
+
 
 
 // app.get('/about', (req, res) => {
