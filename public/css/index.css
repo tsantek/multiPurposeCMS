@@ -251,10 +251,24 @@
         border-top: 15px solid #fcd846;
     }
     .second-intro-left img {
+        display: none;
+    }
+    .info,
+    .first-intro,
+    .bd-example,
+    .navbar-collapse:after {
+        display: none;
+    }
+    .second-intro-left img {
         opacity: 0.3;
+    }
+    .second-intro-right-container {
+        margin-bottom: 60px;
     }
 }
 
+
+/* 
 @media (max-width: 768px) {
     .info,
     .first-intro,
@@ -264,4 +278,4 @@
     .second-intro-left img {
         opacity: 0.3;
     }
-}
+} */

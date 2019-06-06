@@ -39,6 +39,12 @@ nav {
     height: 70px;
 }
 
+.nav-item {
+    z-index: 1;
+    background-color: #fbcd14;
+    text-align: center;
+}
+
 .navbar-dark .navbar-nav .nav-link {
     color: black;
     transition: 0.2s ease;
@@ -78,7 +84,6 @@ nav {
 }
 
 .navbar-collapse {
-    background-color: #fbcd14;
     padding-left: 25px;
     height: 60px;
 }
@@ -193,4 +198,10 @@ footer {
 .privacy:hover {
     text-decoration: none;
     color: white !important;
+}
+
+@media (max-width: 992px) {
+    .navbar-collapse:after {
+        display: none;
+    }
 }
