@@ -8,6 +8,11 @@
     opacity: 0.6;
 }
 
+.carousel-inner {
+    width: 100%;
+    max-height: 80vh !important;
+}
+
 
 /* FIRST INTRO*/
 
@@ -123,4 +128,59 @@
 .img-third-intro-right {
     text-align: center;
     padding-bottom: 20px;
+}
+
+
+/* recent-projects */
+
+.recent-projects {
+    background-color: #111;
+}
+
+.recent-projects-container h1 {
+    color: white;
+    padding: 50px;
+    position: relative;
+}
+
+.projects-list-tite:before {
+    content: '';
+    position: absolute;
+    left: -20px;
+    width: 28px;
+    height: 28px;
+    border-top: 2px solid #fcd846;
+    border-left: 2px solid #fcd846;
+}
+
+.img-project-index {
+    width: 100%;
+}
+
+.projects {
+    margin: 0;
+    padding: 0 0 30px 0;
+    text-align: center;
+}
+
+.projects a {
+    margin: 0;
+    padding: 0;
+    color: white;
+    transition: 0.2s ease;
+}
+
+.projects a:hover {
+    text-decoration: none;
+    color: #fcd846;
+    margin-top: -10px;
+}
+
+.projects p {
+    text-align: center;
+    text-decoration: none;
+}
+
+.projects img {
+    /* margin-bottom: -20%; */
 }
