@@ -1,7 +1,7 @@
 .navbar-brand:after {
     content: '';
     position: absolute;
-    left: 60px;
+    left: 58px;
     top: 0;
     width: 0;
     height: 0;
@@ -26,10 +26,19 @@ nav {
 
 .navbar-dark .navbar-nav .nav-link {
     color: black;
+    transition: 0.2s ease;
+    padding-top: 10px;
+    border-block-end-color: #fbcd14;
+    border-block-end-style: solid;
+    border-block-start-color: #fbcd14;
+    border-block-start-style: solid;
 }
 
-.navbar-dark .navbar-brand {
-    color: white;
+.navbar-dark .navbar-nav .nav-link:hover {
+    border-block-end-color: white;
+    border-block-end-style: solid;
+    border-block-start-color: white;
+    border-block-start-style: solid;
 }
 
 .head-back {
@@ -77,7 +86,23 @@ nav {
 }
 
 .upper-info li {
-    float: left;
     padding-right: 10px;
     font-size: 1rem;
+}
+
+.info-li {
+    float: left;
+}
+
+.social {
+    float: right;
+}
+
+.social a {
+    color: white;
+    transition: 0.4s;
+}
+
+.social a:hover {
+    color: #fbcd14;
 }

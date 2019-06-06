@@ -1,5 +1,4 @@
 <!-- views/pages/index.ejs -->
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,22 +7,123 @@
         <link rel='stylesheet' href="./css/index.css">
         <title>Home</title>
 </head>
-
-
-
 <header>
     <% include ../partials/header %>
-
 </header>
-
 <main>
-    <div>TEST</div>
-</main>
+    <!-- CAROUSEL -->
+    <div class="bd-example">
+        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./img/1.jpg" " class="d-block w-100 " alt="... ">
+                      <div class="carousel-caption d-none d-md-block ">
+                        <h5>We Build Your Dreams</h5>
+                        <p>Modern Building Company</p>
+                      </div>
+                    </div>
+                    <div class="carousel-item ">
+                      <img src="./img/2.jpg "" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Construction You can count on!</h5>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/3.jpg" " class="d-block w-100 " alt="... ">
+                      <div class="carousel-caption d-none d-md-block ">
+                        <h5>Helping you </h5>
+                        <p>and your house become better acquinted</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+<!-- FIRST INTRO -->
+              <div class="first-intro ">
+                <div class="container ">
+                    <div class="row ">
+                        <div class="col-3 first-intro-right d-flex align-items-center justify-content-center "><h1 class="jobs-map ">12 463</h1></div>
+                        <div class="col-6 d-flex align-items-center ">
+                            <div class="first-into-middle ">
+                            <h1>Completed Projects</h1>
+                            <p>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum</p>
+                          </div>
+                        </div>
+                        <div class="col-3 ">
+                            <div class="first-info-right ">
+                                <div class="contact-qoute ">
+                                    <p>LOOKING FOR A QUALITY AND AFFORDABLE CONSTRUCTOR FOR YOUR NEXT PROJECT?</p>
+                                    <a class="contact-qoute-link " href="# "><div class="contact-qoute-link-container ">Request a Quote</div></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+
+<!-- SECOND INTRO -->
+        <div class="second-intro ">
+            <div class="container ">
+                <div class="row ">
+                    <div class="col-6 second-intro-left "><img src="./img/worker-1.jpg "> </div>
+                    <div class="col-6 second-intro-right ">
+                        <div class=" second-intro-right-container ">
+                        <h1>We do the dirty work for you</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi 
+                            ut aliquip ex ea commodo consequat.</p>
+                            <a class="second-intro-right-link-projects " href="# ">OUR SERVICES</a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="third-intro ">
+            <div class="container-fluid third-intro-container ">
+                <div class="row ">
+                    <div class="col-4 ">
+                        <div class="row ">
+                            <div class="img-third-intro-right col-6 "><img src="./img/construction.svg "></div>
+                            <div class="text-third-intro-right col-6 d-flex align-items-center ">
+                                <h4>Design & Build Package</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 ">
+                            <div class="row ">
+                                <div class="img-third-intro-right col-6 "><img src="./img/drill.svg "></div>
+                                <div class="text-third-intro-right col-6 d-flex align-items-center ">
+                                    <h4>Building Renovation</h4>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="col-4 ">
+                                <div class="row ">
+                                    <div class="img-third-intro-right col-6 "><img src="./img/architecture.svg "></div>
+                                    <div class="text-third-intro-right col-6 d-flex align-items-center ">
+                                        <h4>Project Management</h4>
+                                    </div>
+                                </div>
+                     </div>
+             </div>
+         </div>
+    </div>
+
+            </main>
 
 <footer>
     <% include ../partials/footer %>
 </footer>
-<script src="./js/index.js"></script>
+<script src="./js/index.js "></script>
 </body>
 
 </html>

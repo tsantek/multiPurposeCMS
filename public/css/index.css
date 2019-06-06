@@ -1,0 +1,126 @@
+/* INDEX */
+
+.carousel-inner {
+    background-color: black;
+}
+
+.carousel-item img {
+    opacity: 0.6;
+}
+
+
+/* FIRST INTRO*/
+
+.first-intro {
+    background-color: #111;
+}
+
+.first-intro-right {
+    height: 180px;
+    background-repeat: no-repeat, repeat;
+    background-size: cover;
+    background-position: center;
+    background: url(../img/map-dots.svg)
+}
+
+.jobs-map {
+    color: white
+}
+
+.first-into-middle {
+    color: white;
+}
+
+.first-info-right {
+    color: white;
+}
+
+.contact-qoute {
+    margin-top: -92px;
+}
+
+.contact-qoute p {
+    background-color: #111;
+    padding: 10px;
+    margin: 0;
+}
+
+.contact-qoute-link-container {
+    background: #fcd846;
+    padding: 5px;
+    text-align: center;
+}
+
+.contact-qoute-link {
+    color: black;
+}
+
+.contact-qoute:after {
+    content: '';
+    position: absolute;
+    right: 15px;
+    top: 34px;
+    border: 0 solid rgba(0, 0, 0, 0);
+    border-left-width: 127px;
+    border-right-width: 127px;
+    border-top: 15px solid #fcd846;
+}
+
+
+/* SECOND INTRO */
+
+.second-intro-right h1 {
+    margin: 10px;
+}
+
+.second-intro-right-container {
+    padding-top: 70px;
+}
+
+.second-intro-right h1:before {
+    content: '';
+    position: absolute;
+    left: -25px;
+    top: 60px;
+    width: 28px;
+    height: 28px;
+    border-top: 2px solid #fcd846;
+    border-left: 2px solid #fcd846;
+}
+
+.second-intro-right-link-projects {
+    color: black;
+    border-bottom: 1px solid #fcd846;
+    position: relative;
+}
+
+.second-intro-right-link-projects::after {
+    content: "";
+    width: 50%;
+    height: 1.1px;
+    background-color: white;
+    position: absolute;
+    right: 0;
+    top: 18px;
+}
+
+.second-intro-right-link-projects:hover {
+    text-decoration: none;
+    color: #fcd846;
+}
+
+
+/* third intro */
+
+.third-intro-container {
+    padding-top: 20px;
+}
+
+.third-intro {
+    background-color: #fcd846;
+}
+
+.img-third-intro-right {
+    text-align: center;
+    padding-bottom: 20px;
+}
