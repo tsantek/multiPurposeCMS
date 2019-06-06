@@ -1,0 +1,73 @@
+.about-container {
+    margin-top: 40px;
+}
+
+.text-intro-about {
+    background-color: white;
+    margin-top: 25%;
+    margin-left: -20px;
+    padding: 20px;
+}
+
+.qoute-about-first {
+    text-align: center;
+    padding-top: 60px;
+}
+
+.progress {
+    margin-bottom: 40px;
+}
+
+.progres-bar {
+    padding-top: 60px;
+}
+
+.progres-title {
+    text-align: right;
+    margin-top: -40px;
+}
+
+.img-girl-worker {
+    text-align: center;
+}
+
+.img-girl-worker img {
+    height: 400px;
+}
+
+.mission-about {
+    padding: 60px 0 40px 0;
+}
+
+.mission-about p {
+    padding: 10px;
+}
+
+.mission-about li {
+    list-style: none;
+}
+
+.yellow-check {
+    color: #fbcd14;
+}
+
+.qoute {
+    background-color: #fbcd14;
+    color: black;
+}
+
+.qoute-text {
+    padding: 30px;
+}
+
+.link-quote {
+    font-size: 20px;
+    color: black;
+    border-block-end-color: black;
+    border-block-end-style: solid;
+}
+
+.link-quote:hover {
+    text-decoration: none;
+    color: white;
+}
