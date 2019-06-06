@@ -1,3 +1,18 @@
+/* FONT  */
+
+@font-face {
+    font-family: coolFont;
+    src: url(../font/fontawesome-webfont.woff2);
+}
+
+html,
+body {
+    font-family: coolFont;
+}
+
+
+/* NAV */
+
 .navbar-brand:after {
     content: '';
     position: absolute;

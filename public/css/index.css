@@ -60,6 +60,11 @@
     color: black;
 }
 
+.contact-qoute-link:hover {
+    color: white;
+    text-decoration: none;
+}
+
 .contact-qoute:after {
     content: '';
     position: absolute;
@@ -181,6 +186,17 @@
     text-decoration: none;
 }
 
-.projects img {
-    /* margin-bottom: -20%; */
+.partners-info {
+    padding-top: 70px;
+}
+
+.partners-info h1:before {
+    content: '';
+    position: absolute;
+    left: -25px;
+    top: 60px;
+    width: 28px;
+    height: 28px;
+    border-top: 2px solid #fcd846;
+    border-left: 2px solid #fcd846;
 }
