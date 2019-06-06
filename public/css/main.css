@@ -16,12 +16,12 @@ body {
 .navbar-brand:after {
     content: '';
     position: absolute;
-    left: 58px;
-    top: 0;
+    left: 110px;
+    top: 0px;
     width: 0;
     height: 0;
     border-style: solid;
-    border-width: 33.5px 0 33.5px 19px;
+    border-width: 30.5px 0 30.5px 19px;
     border-color: rgba(30, 196, 154, 0) rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #111;
 }
 
@@ -42,6 +42,7 @@ nav {
 .navbar-dark .navbar-nav .nav-link {
     color: black;
     transition: 0.2s ease;
+    font-weight: bold;
     padding-top: 10px;
     border-block-end-color: #fbcd14;
     border-block-end-style: solid;
@@ -61,7 +62,15 @@ nav {
 }
 
 .navbar-brand {
+    font-weight: bold;
     widows: 500px;
+    position: relative;
+    font-size: 25px;
+}
+
+.navbar-brand span {
+    color: #fbcd14;
+    font-size: 35px;
 }
 
 .navbar {
@@ -89,6 +98,7 @@ nav {
 .subtitle {
     width: 100%;
     text-align: right;
+    font-weight: bolder;
 }
 
 .upper-info {
@@ -103,6 +113,10 @@ nav {
 .upper-info li {
     padding-right: 10px;
     font-size: 1rem;
+}
+
+.info {
+    padding-left: 0px;
 }
 
 .info-li {
@@ -120,4 +134,64 @@ nav {
 
 .social a:hover {
     color: #fbcd14;
+}
+
+
+/* footer */
+
+footer {
+    background-color: #111;
+    margin-top: 30px;
+    color: white;
+}
+
+.footer-container {
+    padding-top: 70px;
+}
+
+.footer-container a {
+    color: white;
+}
+
+.footer-brand {
+    font-weight: bold;
+    font-size: 35px;
+}
+
+.footer-brand:hover {
+    text-decoration: none;
+}
+
+.footer-brand span {
+    color: #fbcd14;
+    font-size: 45px;
+}
+
+.copyright {
+    background-color: #111;
+    margin: 0;
+    padding-top: 10px;
+}
+
+.btn-subscribe {
+    background-color: #fbcd14;
+    color: #111;
+}
+
+.btn-subscribe:hover {
+    background-color: #fbcd14;
+    color: #111;
+}
+
+.working-list-footer {
+    list-style: none;
+}
+
+.privacy {
+    color: #fbcd14 !important;
+}
+
+.privacy:hover {
+    text-decoration: none;
+    color: white !important;
 }
