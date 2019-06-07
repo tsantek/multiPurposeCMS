@@ -32,6 +32,11 @@ app.get('/contact', (req, res) => {
 })
 
 
+app.get('/admin', (req, res) => {
+    res.render('admin/index')
+})
+
+
 
 // app.get('/about', (req, res) => {
 //     res.render('pages/about')
