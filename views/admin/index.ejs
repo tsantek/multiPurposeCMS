@@ -9,6 +9,16 @@
 </head>
 <header>
 
+    <style>
+        form {
+            padding: 50px 0 50px 0;
+        }
+        
+        .welcome-dashboard {
+            text-align: center;
+        }
+    </style>
+
     <!-- views/partials/header.ejs -->
     <div class="head-back">
 
@@ -21,7 +31,7 @@
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="./">HOME</a>
+                            <a class="nav-link" href="./admin">HOME</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="./about">ABOUT</a>
@@ -37,7 +47,7 @@
                         </li>
                     </ul>
                     <div class="subtitle">
-                        We do the dirty work for you!
+                        <a class="nav-link" href="./">BACK TO WEBSITE</a>
                     </div>
                 </div>
             </nav>
@@ -48,70 +58,71 @@
 
     <div class="container">
 
-        <form>
+        <h5 class="welcome-dashboard">Welcome to Admin Dashboard</h5>
+        <form method="POST" action="./admin-home-page">
             <h1>HOME PAGE</h1>
             <!-- EMAIL -->
-            <div class="form-group">
+            <!-- <div class="form-group">
                 <label for="email">Email address</label>
                 <input type="email" class="form-control" id="email" aria-describedby="emailHelp" name="email" placeholder="" value="">
-            </div>
+            </div> -->
             <!-- PHONE NUMBER -->
-            <div class="form-group">
+            <!-- <div class="form-group">
                 <label for="PhoneNumber">Phone Number</label>
                 <input type="text" class="form-control" id="PhoneNumber" name="PhoneNumber" placeholder="" value="">
-            </div>
+            </div> -->
             <!-- SUBTITLE ON MENU -->
-            <div class="form-group">
+            <!-- <div class="form-group">
                 <label for="headerSubtitle">Subtitle on Header</label>
                 <input type="text" class="form-control" id="headerSubtitle" name="headerSubtitle" placeholder="" value="">
-            </div>
+            </div> -->
             <!-- COMPLETED PROJECTS NUMEBR OF PROJECTS  -->
             <div class="form-group">
-                <label for="projectComplitedNumber">Projects Complited</label>
-                <input type="text" class="form-control" id="projectComplitedNumber" name="projectComplitedNumber" placeholder="" value="">
+                <label for="projectedComplitedNumber">Projects Complited</label>
+                <input type="number" class="form-control" id="projectedComplitedNumber" name="projectedComplitedNumber" placeholder="" value="<%=data[0].projectedComplitedNumber%>">
             </div>
             <!-- COMPLITED PROJECTS TEXT  -->
             <div class="form-group">
                 <label for="projectComplitedText">Projects Complited Text</label>
-                <input type="text" class="form-control" id="projectComplitedText" name="projectComplitedText" placeholder="" value="">
+                <textarea type="text" rows="5" class="form-control" id="projectComplitedText" name="projectComplitedText" placeholder=""><%=data[0].projectComplitedText%></textarea>
             </div>
             <!-- INTRO FIRST CONTAINER  -->
             <div class="form-group">
                 <label for="firstIntroContainerWork">First Intro Container Work</label>
-                <input type="text" class="form-control" id="firstIntroContainerWork" name="firstIntroContainerWork" placeholder="" value="">
+                <textarea type="text" rows="5" class="form-control" id="firstIntroContainerWork" name="firstIntroContainerWork" placeholder=""><%=data[0].firstIntroContainerWork%></textarea>
             </div>
 
             <!-- PARTNERS TEXT -->
             <div class="form-group">
                 <label for="partnersText">Partners Text</label>
-                <input type="text" class="form-control" id="partnersText" name="partnersText" placeholder="" value="">
+                <textarea type="text" rows="5" class="form-control" id="partnersText" name="partnersText" placeholder=""><%=data[0].partnersText%></textarea>
             </div>
-            <h1>ABOUT PAGE</h1>
+            <!-- <h1>ABOUT PAGE</h1> -->
 
             <!-- WELCOM TEXT -->
-            <div class="form-group">
+            <!-- <div class="form-group">
                 <label for="welcomeAbout">Partners Text</label>
                 <input type="text" class="form-control" id="welcomeAbout" name="welcomeAbout" placeholder="" value="">
-            </div>
+            </div> -->
 
             <!-- INTRO -->
-            <div class="form-group">
+            <!-- <div class="form-group">
                 <label for="introAbout">Partners Text</label>
                 <input type="text" class="form-control" id="introAbout" name="introAbout" placeholder="" value="">
-            </div>
+            </div> -->
 
             <!-- OUR MISSION -->
-            <div class="form-group">
+            <!-- <div class="form-group">
                 <label for="ourMission">Partners Text</label>
                 <input type="text" class="form-control" id="ourMission" name="ourMission" placeholder="" value="">
-            </div>
+            </div> -->
 
             <!-- OUR VISION -->
 
-            <div class="form-group">
+            <!-- <div class="form-group">
                 <label for="ourVision">Partners Text</label>
                 <input type="text" class="form-control" id="ourVision" name="ourVision" placeholder="" value="">
-            </div>
+            </div> -->
 
             <!-- QUICK INFO ABOUT COMPANY FOOTER -->
             <button type="submit" class="btn btn-primary">Submit</button>

@@ -10,8 +10,13 @@ app.use(bodyParser.urlencoded({ extended: false }))
 
 app.use(express.static('public'))
 
+// GET HOME PAGE TO INDEX
 app.get('/', (req, res) => {
-    res.render('pages/index')
+    knex('home_page')
+        .then((data) => {
+            console.log(data);
+            res.render('pages/index', { data: data[0] })
+        }).catch(e => console.log(e))
 })
 
 
@@ -31,11 +36,25 @@ app.get('/contact', (req, res) => {
     res.render('pages/contact')
 })
 
-
+// GET HOME PAGE TO ADMIN
 app.get('/admin', (req, res) => {
-    res.render('admin/index')
+    knex('home_page')
+        .then((data) => {
+            console.log(data);
+            res.render('admin/index', { data })
+        }).catch(e => console.log(e))
 })
 
+// UPDATE  HOME PAGE admin-home-page
+
+app.post('/admin-home-page', (req, res) => {
+    console.log(req.body)
+    knex('home_page')
+        .update(req.body)
+        .then(user => {
+            res.redirect('/admin')
+        })
+})
 
 
 // app.get('/about', (req, res) => {
