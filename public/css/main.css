@@ -86,6 +86,7 @@ nav {
 .navbar-collapse {
     padding-left: 25px;
     height: 60px;
+    background-color: #fbcd14;
 }
 
 .navbar-collapse:after {
@@ -203,5 +204,6 @@ footer {
 @media (max-width: 992px) {
     .navbar-collapse:after {
         display: none;
+        background-color: none;
     }
 }
