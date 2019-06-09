@@ -6,7 +6,7 @@ App created with EJS + Express + Knex + SQL. Deployed on Heroku.
 
 Link: https://cms-recover-website.herokuapp.com/
 
-I'm using free version Heroku for this app, so please wait couple of seconds page to load first time. 
+I'm using free version Heroku for this app, please wait load first time. 
 
 
 HOME PAGE
